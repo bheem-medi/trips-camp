@@ -12,13 +12,13 @@ spec:
       labels:
         app: yelp-camp
     spec:
-      affinity:
-        podAntiAffinity:
-          requiredDuringSchedulingIgnoredDuringExecution:
-            - labelSelector:
-                matchLabels:
-                  app: yelp-camp
-              topologyKey: kubernetes.io/hostname
+      #affinity:
+        #podAntiAffinity:
+          #requiredDuringSchedulingIgnoredDuringExecution:
+            #- labelSelector:
+                #matchLabels:
+                  #app: yelp-camp
+              #topologyKey: kubernetes.io/hostname
 
       containers:
         - name: yelp-camp-container
