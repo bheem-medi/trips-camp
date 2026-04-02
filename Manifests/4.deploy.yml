@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: yelp-camp-deployment
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: yelp-camp
@@ -22,7 +22,8 @@ spec:
 
       containers:
         - name: yelp-camp-container
-          image: shaikmustafa/finalcamp:v1
+          image: bheem05/camp-image:v1
+               # shaikmustafa/finalcamp:v1
           ports:
             - containerPort: 3000
 
